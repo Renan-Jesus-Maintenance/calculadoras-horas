@@ -66,10 +66,10 @@ header h1{
     flex-direction:column;
     align-items:center;
 
-    margin-top:187px;
+    margin-top:170px;
 }
 .resultado-container h2{
-    margin: left -20px;
+    margin: 15px;
 }
 
 #resultado{
@@ -188,5 +188,38 @@ header h1{
     width:70px;
     height:70px;        
     object-fit:contain;
+
+}
+
+/* CELULAR */
+@media (max-width: 768px){
+
+    .card-calculadora{
+        width:100%;
+        padding:20px;
+    }
+
+    .conteudo-calculadora{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .resultado-container{
+        margin-top:30px;
+    }
+
+    .imagem-lateral{
+        margin-top:20px;
+        margin-left:0;
+    }
+
+    .imagem-lateral img{
+        width:150px;
+        height:auto;
+    }
+
+    .card-header h1{
+        font-size:32px;
+    }
 
 }
