@@ -4,9 +4,11 @@
     box-sizing:border-box;
 }
 
+
 body{
     font-family:'Segoe UI', sans-serif;
     background:#eef2f7;
+
 
 }
 header{
@@ -16,22 +18,27 @@ header{
     box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
+
 header h1{
     color:#17375e;
     font-size:48px;
     font-weight:700;
 }
 
+
 .cabecalho{
     display:flex;
     justify-content:center;
     gap:28px;
 
+
     margin-bottom:15px;
+
 
     font-size:18px;
     font-weight:500;
 }
+
 
 
 .linha{
@@ -40,6 +47,7 @@ header h1{
     gap:4px;
     margin-bottom:10px;
 }
+
 
 .linha input{
     width:60px;
@@ -50,27 +58,33 @@ header h1{
     border-radius:6px;
 }
 
+
 .linha span{
     font-size:25px;
 }
+
 
 .inputs{
     width:auto;
     margin-right:0;
 }
 
+
 .resultado-container{
     width:220px;
+
 
     display:flex;
     flex-direction:column;
     align-items:center;
+
 
     margin-top:170px;
 }
 .resultado-container h2{
     margin: 15px;
 }
+
 
 #resultado{
     width:180px;
@@ -79,13 +93,16 @@ header h1{
     border:1px solid #d1d5db;
     border-radius:8px;
 
+
     display:flex;
     justify-content:center;
     align-items:center;
 
+
     font-size:45px;
     font-weight:bold;
     color:#17375e;
+
 
     margin-bottom:25px;
 }
@@ -100,26 +117,33 @@ header h1{
     border-radius:4px;
 }
 
+
 #btnLimpar:hover{
     background:#0b5ed7;
 }
+
 
 .conteudo-calculadora{
     display:flex;
     justify-content:center;
     align-items:flex-start;
 
+
     gap:5px;
 }
+
 
 .card-header{
     text-align:center;
 
+
     margin-bottom:35px;
     padding-bottom:20px;
 
+
     border-bottom:1px solid #e5e7eb;
 }
+
 
 .card-header h1{
     color:#17375e;
@@ -127,99 +151,192 @@ header h1{
     font-weight:700;
 }
 .card-calculadora{
-    background:#ffffff;
+     background:#ffffff;
+
 
     width:700px;
 
+
     border-radius:20px;
 
+
     padding:40px;
+
 
     box-shadow:0 10px 30px rgba(0,0,0,.10);
 }
 
+
 .inputs{
     margin-right:0px;
 }
+
 
 .container{
     display:flex;
     justify-content:center;
     align-items:center;
 
+
     min-height:100vh;
+
 
     padding:20px;
 }
 
+
 .assinatura{
     width:100%;
+
 
     display:flex;
     justify-content:space-between;
     align-items:center;
 
+
     margin-top:25px;
     padding-top:20px;
 
+
     border-top:1px solid #e5e7eb;
+
 
     color:#64748b;
     font-size:13px;
 }
 
+
 .logo-rodape{
+
 
     width:60px;
     height:60px;
     object-fit:contain;
 }
 
+
 .logo-gm{
 
+
     width:90px;
-    height:90px;        
+    height:90px;
     object-fit:contain;
+
 
 }
 
+
 .logo-manutencao{
 
+
     width:70px;
-    height:70px;        
+    height:70px;
     object-fit:contain;
 
+
+}
+
+/* BANNER */
+
+.banner{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.banner img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.texto-banner{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 70%;
+    text-align: center;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 1px;
+    font-weight: 0;
+    line-height: 1.5;
+
+    color: #ffffff;
+
+    text-shadow:
+        2px 2px 6px rgba(0,0,0,.8),
+        0 0 15px rgba(0,0,0,.5);
+
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+.texto-banner h2{
+    display:none;
+}
+
+.texto-banner p{
+    margin:0;
+    font-size:20px;
+    font-weight:600;
+    line-height:1.3;
 }
 
 /* CELULAR */
 @media (max-width: 768px){
 
-    .card-calculadora{
-        width:100%;
-        padding:20px;
-    }
+.card-calculadora{
+    
+    width:100%;
+    padding:20px;
+}
 
-    .conteudo-calculadora{
-        flex-direction:column;
-        align-items:center;
-    }
+.conteudo-calculadora{
+flex-direction:column;
+align-items:center;
+}
 
-    .resultado-container{
-        margin-top:30px;
-    }
 
-    .imagem-lateral{
-        margin-top:20px;
-        margin-left:0;
-    }
+.resultado-container{
+margin-top:30px;
+}
 
-    .imagem-lateral img{
-        width:150px;
-        height:auto;
-    }
 
-    .card-header h1{
-        font-size:32px;
-    }
+.imagem-lateral{
+margin-top:20px;
+margin-left:0;
+}
 
+
+.imagem-lateral img{
+width:150px;
+height:auto;
+}
+
+
+.card-header h1{
+ font-size:32px;
+
+}
+
+.texto-banner{
+    width:90%;
+    font-size:18px;
+}
+
+.texto-banner p{
+    margin:0;
+    font-size:28px;
+    font-weight:800;
+
+}
 }
